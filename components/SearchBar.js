@@ -5,7 +5,6 @@ import { EvilIcons } from '@expo/vector-icons';
 export default function SearchBar({ fetchWeatherData }) {
 
     const [cityName, setCityName] = useState('');
-    console.log(cityName)
 
     return (
         <View style={styles.searchBar}>

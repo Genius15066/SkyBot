@@ -62,7 +62,7 @@ export default function Weather({ weatherData, fetchWeatherData }) {
                 <View style={styles.extra_info}>
                         <Text style={{ fontSize: 22, color: 'white',textAlign: 'center' }}>Min Temp {temp_min}°C</Text>
 
-                        <Text style={{ fontSize: 22, color: 'white',textAlign: 'center' }}>Max Temp: {temp_min}°C </Text>
+                        <Text style={{ fontSize: 22, color: 'white',textAlign: 'center' }}>Max Temp: {temp_max}°C </Text>
             
                 </View>
                 
