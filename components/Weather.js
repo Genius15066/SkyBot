@@ -9,7 +9,7 @@ export default function Weather({ weatherData, fetchWeatherData }) {
 
     const { weather,
             name,
-            main: { temp, humidity,temp_min,temp_max },
+            main: { temp, humidity,temp_min,temp_max,feels_like },
             wind: { speed }
     } = weatherData;
     const [{ main }] = weather;
@@ -60,8 +60,8 @@ export default function Weather({ weatherData, fetchWeatherData }) {
                 </View>
 
                 <View style={styles.extra_info}>
+                        <Text style={{ fontSize: 22, color: 'white',textAlign: 'center' }}>Feels Like: {feels_like}°C </Text>
                         <Text style={{ fontSize: 22, color: 'white',textAlign: 'center' }}>Min Temp: {temp_min}°C</Text>
-
                         <Text style={{ fontSize: 22, color: 'white',textAlign: 'center' }}>Max Temp: {temp_max}°C </Text>
             
                 </View>
